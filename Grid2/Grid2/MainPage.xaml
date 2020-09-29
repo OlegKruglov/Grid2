@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Grid2.MainPage">
+    <StackLayout BackgroundColor="Blue">
+        
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <BoxView Color="White" />
+            <BoxView Grid.Row="1"
+                 Color="White"
+                     HeightRequest="155"
+                     x:Name="myBox"/>
+            <BoxView Grid.Row="2"
+                 Color="White"
+                     HeightRequest="155"
+                     x:Name="myBox"/>
+            <BoxView Grid.Row="0"
+                 Grid.Column="1"
+                 Color="White"
+                     HeightRequest="155"
+                     x:Name="myBox"/>
+            <BoxView Grid.Row="1"
+                 Grid.Column="1"
+                 Color="White"
+                     HeightRequest="155"
+                     x:Name="myBox"/>
+            <BoxView Grid.Row="2"
+                     Grid.Column="1"
+                     Color="White"
+                     HeightRequest="155"
+                     x:Name="myBox"/>
+            <BoxView Grid.Row="0"
+                     Grid.Column="2"
+                     Color="White"
+                     HeightRequest="155"
+                     x:Name="myBox"/>
+            <BoxView Grid.Row="1"
+                     Grid.Column="2"
+                     Color="White"
+                     HeightRequest="155"
+                     x:Name="myBox"/>
+            <BoxView Grid.Row="2"
+                     Grid.Column="2"
+                     Color="White"
+                     HeightRequest="155"
+                     x:Name="myBox"/>
+        </Grid>
+        <Button Text="Reset"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="End"/>
+        <Button Text="Decide turn"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="End"/>
+    </StackLayout>
+
+</ContentPage>
